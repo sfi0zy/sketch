@@ -15,6 +15,7 @@ init-three:
 	yes | cp ./_templates/three/* ./src/
 
 check:
+	npx html-validator ./src/index.html
 	npx stylelint ./src/style.css
 	npx doiuse ./src/style.css
 	npx eslint ./src/script.js

@@ -4,9 +4,9 @@
 
 ```sh
 make install # install local npm dependencies
-make init-css # init-cssjs | init-canvas2d | init-three
+make init-css # init-css | init-cssjs | init-canvas2d | init-three
 make watch # run browser-sync (you'll need inotifywatch)
-make check # run eslint, doiuse and stylelint in console, if needed
+make check # run html-validator, stylelint, doiuse, eslint in console
 make clean # delete dependencies
 ```
 
