@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: calc(16px + (24 - 16) * ((100vw - 400px) / (1200 - 400)));
+
+    @media screen and (max-width: 400px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 24px;
+    }
+
+    line-height: 1.5;
+}
+
+.css-example {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    overflow: hidden;
+}
+
+.full-screen-2d-example {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.full-screen-2d-example.-loaded {
+    opacity: 1;
+}
+
+.full-screen-2d-example > canvas {
+    height: 100vh;
+    width: 100vw;
+}
