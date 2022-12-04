@@ -3,7 +3,7 @@
 ## Usage
 
 ```sh
-git clone https://github.com/sfi0zy/sketch.git
+git clone git@github.com:sfi0zy/sketch.git
 cd sketch
 make install # install local npm packages
 make init-css # choose init-* between "css", "cssjs", "canvas2d", "three"
