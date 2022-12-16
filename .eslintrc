@@ -33,7 +33,8 @@
         "no-plusplus":                       "off",
         "no-console":                        "off",
 
-        "sonarjs/no-duplicate-string":       "off"
+        "sonarjs/no-duplicate-string":       "off",
+        "sonarjs/no-unused-collection":      "off"
     }
 }
 
