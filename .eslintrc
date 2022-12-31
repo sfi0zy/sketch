@@ -20,20 +20,14 @@
     "rules": {
         "indent":                            ["error", 4, { "SwitchCase": 1 }],
         "space-before-function-paren":       ["error", "never"],
-        "no-trailing-spaces":                "off",
-        "lines-between-class-members":       "off",
-        "no-multi-spaces":                   "off",
-        "key-spacing":                       "off",
+        "key-spacing":                       ["error", { "beforeColon": false, "afterColon": true }],
+        "lines-between-class-members":       ["error", "always", { "exceptAfterSingleLine": true }],
         "function-paren-newline":            "off",
         "object-curly-newline":              "off",
-
-        "no-unused-vars":                    "off",
-        "no-param-reassign":                 "off",
         "max-classes-per-file":              "off",
         "no-plusplus":                       "off",
         "no-console":                        "off",
 
-        "sonarjs/no-duplicate-string":       "off",
         "sonarjs/no-unused-collection":      "off"
     }
 }
