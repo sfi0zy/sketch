@@ -31,10 +31,14 @@ class Utils3D {
     }
 }
 
+class DefaultMaterial extends THREE.MeshBasicMaterial {
+    constructor() {
+        super({ color: COLOR_SCHEME.default });
+    }
+}
+
 class MaterialsLibrary {
-    static default = new THREE.MeshBasicMaterial({
-        color: COLOR_SCHEME.default,
-    });
+    static default = new DefaultMaterial();
 }
 
 class SandboxWorld extends THREE.Group {
