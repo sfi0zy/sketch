@@ -12,7 +12,7 @@ const COLOR_SCHEME = Object.freeze({
 
 class Utils3D {
     static getMousePosition3D(event, camera, targetZ) {
-        const x = (event.clientX / window.innerWidth)  * 2 - 1;
+        const x = (event.clientX / window.innerWidth) * 2 - 1;
         const y = -(event.clientY / window.innerHeight) * 2 + 1;
         const tmp = new THREE.Vector3();
 
