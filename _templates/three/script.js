@@ -3,6 +3,7 @@ const { THREE } = window;
 const FLAGS = Object.freeze({
     ENABLE_ORBIT_CONTROLS: true,
     ENABLE_SHADOWS: true,
+    ENABLE_BLOOM: true,
 });
 
 const COLOR_SCHEME = Object.freeze({
@@ -124,15 +125,9 @@ class FullScreen3DExample {
         this.#composer = new THREE.EffectComposer(this.#renderer);
         this.#composer.setSize(width, height);
         this.#initRenderPass();
-        this.#initBloomPass();
-    }
 
-    #initControls() {
-        if (FLAGS.ENABLE_ORBIT_CONTROLS) {
-            this.#controls = new THREE.OrbitControls(
-                this.#camera,
-                this.#renderer.domElement,
-            );
+        if (FLAGS.ENABLE_BLOOM) {
+            this.#initBloomPass();
         }
     }
 
@@ -160,6 +155,15 @@ class FullScreen3DExample {
         bloomPass.renderToScreen = true;
 
         this.#composer.addPass(bloomPass);
+    }
+
+    #initControls() {
+        if (FLAGS.ENABLE_ORBIT_CONTROLS) {
+            this.#controls = new THREE.OrbitControls(
+                this.#camera,
+                this.#renderer.domElement,
+            );
+        }
     }
 
     #initEventListeners() {
