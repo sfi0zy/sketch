@@ -1,5 +1,9 @@
+const COLOR_SCHEME = Object.freeze({
+    background: '#000000',
+    default: '#777777',
+});
+
 class FullScreen2DExample {
-    static DEFAULT_CLEAR_COLOR = '#000000';
     static CSS_ROOT = 'full-screen-2d-example';
     static CSS_ROOT_LOADED_VARIANT = '-loaded';
 
@@ -15,7 +19,6 @@ class FullScreen2DExample {
         this.#canvas = document.createElement('canvas');
         this.#context = this.#canvas.getContext('2d');
         this.#root.appendChild(this.#canvas);
-        this.#clearColor = FullScreen2DExample.DEFAULT_CLEAR_COLOR;
 
         this.#onWindowResize();
         this.#clear();
@@ -44,7 +47,7 @@ class FullScreen2DExample {
     }
 
     #clear() {
-        this.#context.fillStyle = this.#clearColor;
+        this.#context.fillStyle = COLOR_SCHEME.background;
         this.#context.fillRect(0, 0, this.#canvas.width, this.#canvas.height);
     }
 
@@ -52,7 +55,7 @@ class FullScreen2DExample {
         const width = this.#canvas.width / window.devicePixelRatio;
         const height = this.#canvas.height / window.devicePixelRatio;
 
-        this.#context.fillStyle = '#ff0000';
+        this.#context.fillStyle = COLOR_SCHEME.default;
         this.#context.fillRect(0, 0, width / 2, height / 2);
     }
 
