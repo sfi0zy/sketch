@@ -9,7 +9,7 @@
     "url": "git://github.com/sfi0zy/sketch.git"
   },
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=19.5.0"
   },
   "browserslist": [
     "> .5% and last 2 versions",
