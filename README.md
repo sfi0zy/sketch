@@ -16,4 +16,4 @@ make clean # delete installed packages if you don't need them anymore
 
 MIT License
 
-Copyright (c) 2022 Ivan Bogachev
+Copyright (c) 2023 Ivan Bogachev
