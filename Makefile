@@ -8,6 +8,9 @@ init-css:
 init-cssjs:
 	yes | cp ./_templates/cssjs/* ./src/
 
+init-medium:
+	yes | cp ./_templates/medium/* ./src/
+
 init-canvas2d:
 	yes | cp ./_templates/canvas2d/* ./src/
 

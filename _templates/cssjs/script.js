@@ -1,6 +1,3 @@
-// eslint-disable-next-line
-import Medium from 'https://unpkg.com/css.medium.js@1.0.0/css.medium.js';
-
 class Example {
     static CSS_ROOT = 'my-example';
     static CSS_ROOT_LOADED_VARIANT = '-loaded';
@@ -31,16 +28,6 @@ class Example {
 }
 
 function main() {
-    // eslint-disable-next-line no-unused-vars
-    const medium = new Medium({
-        features: {
-            xy: true,
-            // scroll: true,
-            // time: true,
-            // random: true,
-        },
-    });
-
     const root = document.getElementById('root');
     const example = new Example(root);
 
