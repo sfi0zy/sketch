@@ -1,6 +1,6 @@
-const COLOR_SCHEME = Object.freeze({
-    background: '#000000',
-    default: '#777777',
+const COLOR_PALETTE = Object.freeze({
+    black: '#010101',
+    white: '#eeeeee',
 });
 
 class FullScreen2DExample {
@@ -47,7 +47,7 @@ class FullScreen2DExample {
     }
 
     #clear() {
-        this.#context.fillStyle = COLOR_SCHEME.background;
+        this.#context.fillStyle = COLOR_PALETTE.black;
         this.#context.fillRect(0, 0, this.#canvas.width, this.#canvas.height);
     }
 
@@ -55,7 +55,7 @@ class FullScreen2DExample {
         const width = this.#canvas.width / window.devicePixelRatio;
         const height = this.#canvas.height / window.devicePixelRatio;
 
-        this.#context.fillStyle = COLOR_SCHEME.default;
+        this.#context.fillStyle = COLOR_PALETTE.white;
         this.#context.fillRect(0, 0, width / 2, height / 2);
     }
 
