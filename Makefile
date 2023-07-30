@@ -11,6 +11,9 @@ init-cssjs:
 init-medium:
 	yes | cp ./_templates/medium/* ./src/
 
+init-preact:
+	yes | cp ./_templates/preact/* ./src/
+
 init-canvas2d:
 	yes | cp ./_templates/canvas2d/* ./src/
 

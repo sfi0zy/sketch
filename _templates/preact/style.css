@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-size: calc(16px + (24 - 16) * ((100vw - 400px) / (1200 - 400)));
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 400px) {
+
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    html {
+        font-size: 24px;
+    }
+}
+
+h1 {
+    text-align: center;
+}
