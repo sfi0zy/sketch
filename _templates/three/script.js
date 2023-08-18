@@ -135,10 +135,7 @@ class SandboxWorld extends THREE.Group {
     }
 
     #initLights() {
-        const ambient = new THREE.AmbientLight({
-            color: COLOR_PALETTE.white,
-            intensity: 0.1,
-        });
+        const ambient = new THREE.AmbientLight(COLOR_PALETTE.white, 0.5);
 
         this.add(ambient);
     }
