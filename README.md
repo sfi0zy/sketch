@@ -20,10 +20,13 @@ make init-preact
 make init-canvas2d
 make init-three
 
-# Step 4: run html-validator, stylelint, doiuse and eslint:
+# step 4. run the browsersync
+make watch
+
+# Step 5: run html-validator, stylelint, doiuse and eslint:
 make check
 
-# Step 5: delete node_modules/ if you don't need them anymore:
+# Step 6: delete node_modules/ if you don't need them anymore:
 make clean
 ```
 
