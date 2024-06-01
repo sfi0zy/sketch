@@ -14,7 +14,6 @@ make install
 
 # Step 3: init the sketch (choose one):
 make init-css
-make init-cssjs
 make init-medium
 make init-preact
 make init-canvas2d

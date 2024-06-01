@@ -5,9 +5,6 @@ install:
 init-css:
 	yes | cp ./_templates/css/* ./src/
 
-init-cssjs:
-	yes | cp ./_templates/cssjs/* ./src/
-
 init-medium:
 	yes | cp ./_templates/medium/* ./src/
 
